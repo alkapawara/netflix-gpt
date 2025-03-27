@@ -10,6 +10,7 @@ const useNowplayngMoview = () => {
       API_OPTION
     );
     const json = await data.json();
+    console.log("moviedata", json.results);
     dispatch(addnowplayonhMovie(json.results));
   };
   useEffect(() => {
