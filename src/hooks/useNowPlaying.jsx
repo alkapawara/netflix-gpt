@@ -2,7 +2,7 @@ import { useEffect } from "react";
 import { useDispatch } from "react-redux";
 import { addnowplayonhMovie } from "../utils/movieSlice";
 import { API_OPTION } from "../utils/constants";
-const useNowplayngMoview = () => {
+const useNowPlaying = () => {
   const dispatch = useDispatch();
   const getNowMoviePlay = async () => {
     const data = await fetch(
@@ -18,4 +18,4 @@ const useNowplayngMoview = () => {
   }, []);
 };
 
-export default useNowplayngMoview;
+export default useNowPlaying;
