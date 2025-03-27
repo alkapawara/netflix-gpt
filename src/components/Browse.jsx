@@ -1,6 +1,8 @@
 import React, { useEffect } from "react";
 import Header from "./Header";
 import useNowPlaying from "../hooks/useNowPlaying";
+import MainConatiner from "./MainConatiner";
+import SecondaryContainer from "./SecondaryContainer";
 // import { API_OPTION } from "../utils/constants";
 // import { useDispatch } from "react-redux";
 // import { addnowplayonhMovie } from "../utils/movieSlice";
@@ -25,7 +27,8 @@ const Browse = () => {
     <>
       <Header />
       <div className="pt-40">
-        <h2>hel</h2>
+        <MainConatiner />
+      <SecondaryContainer />
       </div>
     </>
   );
