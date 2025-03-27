@@ -1,8 +1,10 @@
 import { configureStore } from "@reduxjs/toolkit";
-import useReducer  from '../utils/userSlice';
+import userReducer  from '../utils/userSlice';
+import movieReducer from '../utils/movieSlice'
 const store=configureStore({
     reducer:{
-        user:useReducer
+        user:userReducer,
+        movies:movieReducer
     },
     devTools: true,
 })
