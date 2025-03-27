@@ -6,6 +6,8 @@ import { createUserWithEmailAndPassword,signInWithEmailAndPassword,updateProfile
 import { useNavigate } from "react-router-dom";
 import { useDispatch } from "react-redux";
 import { addUser } from "../utils/userSlice";
+import { Logn_Bg_img } from "../utils/constants";
+import { User_Avtar } from "../utils/constants";
 const Login = () => {
   const dispatch=useDispatch()
   const [isSignInForm, setIsSignInForm] = useState(true);
@@ -37,13 +39,13 @@ const Login = () => {
            const user = userCredential.user;
            updateProfile(user, {
             displayName: fullname?.current.value,
-            photoURL: "https://cdn-icons-png.flaticon.com/128/149/149071.png"
+            photoURL: User_Avtar
 
           }).then(() => {
             // Profile updated! and this info getting from auth
               const {uid,email,displayName,photoURL} = auth.currentUser;
               dispatch(addUser({uid:uid,email:email,displayName:displayName,photoURL:photoURL}))
-              navigate("/browse")
+             
           }).catch((error) => {
            setErrorMsg(error.message)
           });
@@ -65,7 +67,7 @@ const Login = () => {
         .then((userCredential) => {
           // Signed in 
           const user = userCredential.user;
-          navigate("/browse")
+        
           // ...
         })
         .catch((error) => {
@@ -86,7 +88,7 @@ const Login = () => {
       {/* Background Image */}
       <div className="absolute inset-0 ">
         <img
-          src="https://assets.nflxext.com/ffe/siteui/vlv3/50fcc930-ba3f-4cae-9257-9f920e30a998/web/IN-en-20250310-TRIFECTA-perspective_739387a0-ff14-44ed-a5af-36e5aa4d236e_large.jpg"
+          src={Logn_Bg_img}
           alt="Netflix background"
           className="w-full h-full object-cover"
         />
