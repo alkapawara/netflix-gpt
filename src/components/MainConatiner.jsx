@@ -9,7 +9,7 @@ const MainConatiner = () => {
         return <h2>Loading...</h2>;
       }
     const mainMovie=data[0]
-    const {original_title,overview,id} =mainMovie;
+    const {original_title,overview,id} = mainMovie;
 
   return (
     <>
