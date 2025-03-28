@@ -10,7 +10,7 @@ const VideoBackground = ({ moviId }) => {
   const videoTrailer = async () => {
     try {
       const response = await fetch(
-        `https://api.themoviedb.org/3/tv/${moviId}/videos?language=en-US`,
+        `https://api.themoviedb.org/3/movie/${moviId}`,
         API_OPTION
       );
       const json = await response.json();
@@ -45,7 +45,6 @@ const VideoBackground = ({ moviId }) => {
           src={`https://www.youtube.com/embed/${trailerVideo?.key}`}
           title="YouTube video player"
           allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-          referrerPolicy="strict-origin-when-cross-origin"
         ></iframe>
       ) : (
         <p>Loading trailer...</p>
