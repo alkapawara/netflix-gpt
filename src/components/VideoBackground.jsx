@@ -10,7 +10,7 @@ const VideoBackground = ({ moviId }) => {
   const videoTrailer = async () => {
     try {
       const response = await fetch(
-        `https://api.themoviedb.org/3/movie/${moviId}`,
+        "https://api.themoviedb.org/3/movie/1125899/videos?language=en-US",
         API_OPTION
       );
       const json = await response.json();
