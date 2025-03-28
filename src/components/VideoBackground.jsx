@@ -13,7 +13,8 @@ const VideoBackground = ({ moviId }) => {
     const json = await data.json();
     const filterData = json.results.filter((vdo) => vdo.type === "Trailer");
     const trailer = filterData.length ? filterData[0] : json.results[0];
-    console.log("tralertvido", trailer);
+    console.log("tralertvido", filterData);
+    console.log("jsonTrailer", json);
     dispatch(addTrailervideo(trailer));
   };
 
