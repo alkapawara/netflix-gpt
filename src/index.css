@@ -2,18 +2,21 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
 @font-face {
   font-family:KFOlC ;
   src: url('./assets/fonts/KFOlC-B.ttf');
   font-weight: normal;
   font-style: normal;
 }
+
 @font-face {
   font-family:KFOm ;
   src: url('./assets/fonts/KFOm.ttf');
   font-weight: normal;
   font-style: normal;
 }
+
 *{
 padding: 0;
 margin: 0;

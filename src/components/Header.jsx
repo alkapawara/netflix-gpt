@@ -49,12 +49,12 @@ const Header = () => {
     return () => unsubscribe();
   }, []);
   return (
-    <div className="absolute z-10 px-32 w-full bg-gradient-to-t from-transparent to-black flex justify-between items-center">
+    <div className="fixed z-10 px-32 w-full bg-gradient-to-t from-transparent to-black flex justify-between items-center">
       <img src={logo} alt="Netflix Logo" className="w-44 " />
       {user && (
         <div className="flex gap-3 items-center">
           <img src={user?.photoURL} className="w-10 h-10" alt="profile" />
-          <button onClick={handlSignOut} className="text-white font-bold font-kfom">sign out</button>
+          <button onClick={handlSignOut} className="text-white font-bold font-kfom">Sign out</button>
         </div>
       )}
     </div>
