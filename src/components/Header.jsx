@@ -54,7 +54,7 @@ const Header = () => {
       {user && (
         <div className="flex gap-3 items-center">
           <img src={user?.photoURL} className="w-10 h-10" alt="profile" />
-          <button onClick={handlSignOut}>sign out</button>
+          <button onClick={handlSignOut} className="text-white font-bold font-kfom">sign out</button>
         </div>
       )}
     </div>
