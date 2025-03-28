@@ -104,7 +104,7 @@ const Login = () => {
         <div className="absolute inset-0 bg-black bg-opacity-100 md:opacity-60 "></div>
       </div>
       <form
-        className="absolute p-8 bg-opacity-80 bg-black w-full max-w-md left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 px-4"
+        className="absolute p-8 bg-opacity-80 bg-black w-full max-w-md left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 px-10"
         onSubmit={(e) => e.preventDefault()}
       >
         <h2 className="text-3xl  text-white mb-6 space-x-4 ">
@@ -115,20 +115,20 @@ const Login = () => {
             type="text"
             placeholder="Full name"
             ref={fullname}
-            className="py-2 px-4 mb-4 w-full bg-gray-800 bg-opacity-50 text-white placeholder-gray-300 border border-gray-500 rounded focus:outline-none focus:ring-1 focus:ring-white"
+            className="py-2 px-4 mb-5 w-full bg-gray-800 bg-opacity-50 text-white placeholder-gray-300 border border-gray-500 rounded focus:outline-none focus:ring-1 focus:ring-white"
           />
         )}
         <input
           type="text"
           placeholder="Email"
           ref={email}
-          className="py-2 px-4 mb-4 w-full bg-gray-800 bg-opacity-50 text-white placeholder-gray-300 border border-gray-500 rounded focus:outline-none focus:ring-1 focus:ring-white"
+          className="py-2 px-4 mb-5 w-full bg-gray-800 bg-opacity-50 text-white placeholder-gray-300 border border-gray-500 rounded focus:outline-none focus:ring-1 focus:ring-white"
         />
         <input
           type="password"
           placeholder="password"
           ref={pass}
-          className="py-2 px-4 mb-4 w-full bg-gray-800 bg-opacity-50 text-white placeholder-gray-300 border border-gray-500 rounded focus:outline-none focus:ring-1 focus:ring-white"
+          className="py-2 px-4 mb-5 w-full bg-gray-800 bg-opacity-50 text-white placeholder-gray-300 border border-gray-500 rounded focus:outline-none focus:ring-1 focus:ring-white"
         />
         <p className=" text-red-600">{erroMsg}</p>
         <button
