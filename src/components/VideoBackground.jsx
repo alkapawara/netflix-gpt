@@ -16,7 +16,7 @@ const VideoBackground = ({ moviId }) => {
           allowFullScreen
         ></iframe>
       ) : (
-        <p>Loading trailer...</p>
+        <div className="pt-40">Loading trailer...</div>
       )}
     </div>
   );

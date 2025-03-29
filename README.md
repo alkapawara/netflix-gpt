@@ -26,5 +26,5 @@ If you are developing a production application, we recommend using TypeScript an
 
 # netflixGPT
 
-    - search bar movies
-    - movie suggestion
+- search bar movies
+- movie suggestion

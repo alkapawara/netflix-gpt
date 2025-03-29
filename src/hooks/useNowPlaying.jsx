@@ -12,6 +12,7 @@ const useNowPlaying = () => {
     const json = await data.json();
     dispatch(addnowplayonhMovie(json.results));
   };
+  
   useEffect(() => {
     getNowMoviePlay();
   }, []);
